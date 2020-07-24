@@ -12,9 +12,6 @@
         <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
         </a>
-        <a class="logo-oculto">
-            <img src="public/dist/images/morena_white.png" style="width: 100px; height: 30px; margin-top: 10px"/>
-        </a>
 
         <div class="navbar-custom-menu">
             <form class="navbar-form navbar-left hide" role="search" id="divfiltropedido">
