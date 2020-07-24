@@ -8,6 +8,7 @@ if(isset($_GET['operation']))
         session_start();
         // Borramos toda la sesion
         session_destroy();
+        require_once("controllers/noticias_controller.php");
         require_once("views/login.php");
     }
 }
