@@ -29,6 +29,52 @@ $(() => {
         e.preventDefault();
     });
 
+    function msnok(msn)
+    {
+        toast({
+            type: 'success',
+            title: msn
+        })
+    }
+
+    const toast = swal.mixin({
+        toast: true,
+        position: 'bottom-end',
+        showConfirmButton: false,
+        timer: 5000
+    });
+
+    function error(msn)
+    {
+        toast({
+            type: 'error',
+            title: msn
+        })
+    }
+    function error2(msn)
+    {
+        swal({
+            position: 'center',
+            type: 'error',
+            title: msn,
+            showConfirmButton: true,
+            confirmButtonText:"Aceptar"
+            //timer: 1500
+        })
+    }
+    
+    function msnok2(msn)
+    {
+        swal({
+            position: 'center',
+            type: 'success',
+            title: msn,
+            showConfirmButton: true,
+            confirmButtonText:"Aceptar"
+            //timer: 1500
+        })
+    }
+
     document.getElementById("newUsername").onchange = () => {validateUser()};
     function validateUser() {
         var user = $('#newUsername').val();
